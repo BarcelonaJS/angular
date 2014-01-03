@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularJS Barcelona </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    img.logo{
+        float: right;
+        margin-right: -10px;
+        margin-top: -37px;
+    }
+    .footer {
+        padding-top: 2em;
+        background-color: #333;
+        color: white;
+        padding-bottom: 2em;
+    }
+    </style>
+
+</head>
+<body ng-app="angularBCN" ng-controller="AppCtrl">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <div class="container">
+                <div class="page-header">
+                    <img src="images/logo.png" class="logo" alt="">
+                    <h1>{{hello}}</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="lead">
+                            The <a href="http://www.meetup.com/AngularJS-Barcelona/">AngularJS Meetup Barcelona</a> is a meetup around the <a href="http://www.angularjs.org">AngularJS </a> framework. We're open to anyone interested in the topic. Whether you're a beginner dying to poke questions at someone with experience or a veteran wanting to discuss the finer details, come along. We can help with specific questions for your problem, write or review some code together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="page-header">
+                    <h3>{{join}} <a href="http://www.meetup.com/AngularJS-Barcelona/events/156129312/" data-event="156129312" class="mu-rsvp-btn" style="margin-left:0.6em">RSVP</a> <span class="pull-right">{{eventDate | date: 'medium'}}</span></h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p style="font-size: 1.2em">
+                           We have great news for this new year. The 25th january 2014 we will be holding a special event at Mobile World Center. The event will consist in a main presentation hold by a reputed speaker and several workshops covering concrete topics such as testing or mobile apps. We will make them in a hands-on format so we encourage everybody to bring his laptop and get dirty coding with us. Thanks a lot to the people of BarcelonaJS for making this possible.
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin:2em auto">
+                    <div class="col-md-4">
+                        <h4>AngularJS 101</h4>
+                        <p><small>
+                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"</small></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Mobile App with Cordova</h4>
+                        <p><small>
+                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"
+                        </small></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Testing with Protractor</h4>
+                        <p>
+                            <small>
+                                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <p>
+                        Powered by Sergi  ©2013-2014
+                    </p>
+                    <p>
+                        Code licensed under the
+                        <a href="https://github.com/angular/angular.js/blob/master/LICENSE" target="_blank">The
+                          MIT License</a>.
+                    </p>
+                  </div>
+            </footer>
+
+
+              <script src="vendor/angular/angular.js"></script>
+              <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+              <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+              <script src="app.js"></script>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s); js.id=id;js.async=true;js.src="https://secure.meetup.com/598491059688185024633/script/api/mu.btns.js?id=k9g5e6s0et2n29b55itkppqt9c";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mu-bootjs");</script>
+          </body>
+          </html>
