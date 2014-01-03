@@ -6,6 +6,6 @@ angular.module('angularBCN', ['ui.bootstrap'])
 
   $scope.join = 'AngularJS special event';
 
-  $scope.eventDate = new Date('12-25-2014');
+  $scope.eventDate = new Date('01-25-2014');
 })
 ;
