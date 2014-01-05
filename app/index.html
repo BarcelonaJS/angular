@@ -25,77 +25,14 @@
     </style>
 
 </head>
-<body ng-app="angularBCN" ng-controller="AppCtrl">
+<body ng-app="angularBCN">
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-            <div class="container">
-                <div class="page-header">
-                    <img src="images/logo.png" class="logo" alt="">
-                    <h1>{{hello}}</h1>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="lead">
-                            The <a href="http://www.meetup.com/AngularJS-Barcelona/">AngularJS Meetup Barcelona</a> is a meetup around the <a href="http://www.angularjs.org">AngularJS </a> framework. We love AngularJS, we love the way it helps us build better web applications with less effort and we would love to meet other AngularJS developers in the Barcelona area so that we can discuss our approaches, ways, etc. with them.
-                        </p>
-                    </div>
-                </div>
+            <div class="container" ui-view>
+                
             </div>
-            <div class="container">
-                <div class="page-header">
-                    <h3>{{join}} <a href="http://www.meetup.com/AngularJS-Barcelona/events/156129312/" data-event="156129312" class="mu-rsvp-btn" style="margin-left:0.6em">RSVP</a> <span class="pull-right">{{eventDate | date: 'medium'}}</span></h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p style="font-size: 1.2em">
-                           We have great news for this new year. The 25th january 2014 we will be holding a special event at Mobile World Center. The event will consist in a main presentation hold by a reputed speaker and several workshops covering concrete topics such as testing or mobile apps. We will make them in a hands-on format so we encourage everybody to bring his laptop and get dirty coding with us. Thanks a lot to the people of <a href="http://www.barcelonajs.org">BarcelonaJS</a> for making this possible.
-                        </p>
-                    </div>
-                </div>
-                <div class="row" style="margin:2em auto">
-                    <div class="col-md-12">
-                        <h3>Talks <small>10:00 - 12:00</small></h3>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>AngularJS present and future</h4>
-                        <p><small>
-                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"</small></p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Testing in AngularJS</h4>
-                        <p><small>
-                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"</small></p>
-                    </div>
-                </div>
-                <div class="row" style="margin:2em auto">
-                    <div class="col-md-12">
-                        <h3>Workshops <small>12:00 - 15:00</small></h3>
-                        <p>
-                            All workshops will be in a hands-on format so we...
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>AngularJS 101</h4>
-                        <p><small>
-                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"</small></p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Mobile App with Cordova</h4>
-                        <p><small>
-                            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"
-                        </small></p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4>Testing with Protractor</h4>
-                        <p>
-                            <small>
-                                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"
-                            </small>
-                        </p>
-                    </div>
-                </div>
-            </div>
+
             <footer class="footer">
                 <div class="container">
                     <div class="row">
@@ -116,9 +53,15 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-5"><img src="images/mwc.logo.png" alt=""></div>
-                                <div class="col-md-3 col-md-offset-1"><img style="background-color: black; width: 80px" src="images/bcnjs.logo.png" alt=""></div>
-                                <div class="col-md-3"><img style="width: 80px"src="images/agilogy.logo.png" alt=""></div>
+                                <div class="col-md-5">
+                                    <img src="images/mwc.logo.png" alt="">
+                                </div>
+                                <div class="col-md-3 col-md-offset-1">
+                                    <img style="background-color: black; width: 80px" src="images/bcnjs.logo.png" alt="">
+                                </div>
+                                <div class="col-md-3">
+                                    <img style="width: 80px"src="images/agilogy.logo.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -129,6 +72,7 @@
               <script src="vendor/angular/angular.js"></script>
               <script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
               <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+              <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
               <script src="app.js"></script>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s); js.id=id;js.async=true;js.src="https://secure.meetup.com/598491059688185024633/script/api/mu.btns.js?id=k9g5e6s0et2n29b55itkppqt9c";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mu-bootjs");</script>
           </body>
