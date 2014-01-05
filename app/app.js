@@ -1,7 +1,7 @@
 angular.module('angularBCN', ['ui.bootstrap', 'ui.router'])
 
 .config(function($urlRouterProvider, $stateProvider){
-    $urlRouterProvider.otherwise("home");
+    $urlRouterProvider.otherwise("/");
     
     $stateProvider
         .state('home', {
