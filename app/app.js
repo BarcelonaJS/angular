@@ -6,12 +6,12 @@ angular.module('angularBCN', ['ui.bootstrap', 'ui.router'])
     $stateProvider
         .state('home', {
           url: "/",
-          templateUrl: "partials/home.tpl.html",
+          templateUrl: "app/partials/home.tpl.html",
           controller: 'HomeCtrl'
         })
         .state('event', {
           url: "/events/:eventDate",
-          templateUrl: "partials/event.tpl.html",
+          templateUrl: "app/partials/event.tpl.html",
           controller: 'EventCtrl'
         });
 
