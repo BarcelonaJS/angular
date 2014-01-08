@@ -34,7 +34,7 @@ angular.module('angularBCN', ['ui.bootstrap', 'ui.router'])
         {
 
             title: 'AngularJS special event @ MWC',
-            date: new Date('01-25-2014'),
+            date: new Date(2014, 0, 25),
             description: 'We have great news for this new year.'+
             ' The 25th january 2014 we will be holding a special event at Mobile World Capital.'+
             ' We will have talks and workshops covering from the basics of the framework to deeper'+
