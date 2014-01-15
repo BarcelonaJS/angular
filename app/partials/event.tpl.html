@@ -21,10 +21,26 @@
             The workshops will be 45-60min and they will be in a hands-on format so we encourage attendants to bring his laptop and code along with us by groups, pairs or individually. We will post the tools needed for each workshop soon.
         </p>
     </div>
-    <div class="col-md-4" ng-repeat="workshop in currentEvent.workshops">
-        <h4>{{workshop.title}} <small>{{workshop.start}} - {{workshop.end}}</small></h4>
-        <p><small>
-           {{workshop.description}}</small></p>
+    <div class="col-md-4" ng-repeat="workshop in currentEvent.workshops" style="margin: 20px auto">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>
+                    {{workshop.title}}
+                </h4>
+            </div>
+            <div class="col-md-4">
+                <span class="label pull-right" ng-class="{'label-success': workshop.level == 'Beginner', 'label-warning': workshop.level == 'Intermediate'}">{{workshop.level}}</span>
+            </div>
         </div>
+        <h4 style="text-align: right"><small>{{workshop.start}} - {{workshop.end}}</small></h4>
+        <h4 style="text-align: right"><small>by <span ng-repeat="s in workshop.speakers">
+            <a ng-show="s.indexOf('@') == 0" ng-href="https://twitter.com/{{s}}">{{s + (($index == workshop.speakers.length - 1) ? '.' : ', ')}}</a>
+            <span ng-show="s.indexOf('@') != 0">{{s}}</span>
+        </span></small></h4>
+        <p style="text-align:justify">
+            <small>
+                {{workshop.description}}
+            </small>
+        </p>
     </div>
 </div>

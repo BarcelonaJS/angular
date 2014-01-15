@@ -53,10 +53,7 @@ angular.module('angularBCN', ['ui.bootstrap', 'ui.router','ngSanitize'])
             ' to create a community to share knowledge, teach and learn about this fantastic tool.\n' +
             ' From AngularBCN we want an event for newbies as well as seasoned angular developers with'+
             ' three hands-on workshops. We encourage you to bring your laptops and code with us some'+
-            ' super-heroic ng-application :)\n'+
-            ' All the event information can be found at <a href="http://angular.barcelonajs.org">' +
-            ' angular.barcelonajs.org</a>. We would like' +
-            ' to thank the <a href="http://www.barcelonajs.org/">BarcelonaJS</a> community for all its support.',
+            ' super-heroic ng-application :)',
             location: 'Mobile World Centre.',
             location_link: 'http://goo.gl/maps/YTT6k',
             workshops: [
@@ -64,19 +61,35 @@ angular.module('angularBCN', ['ui.bootstrap', 'ui.router','ngSanitize'])
                     start: '10:30',
                     end: '11:30',
                     title: 'AngularJS 101',
-                    description : 'This is a workshop for people without prior angularjs experience in which we will develop a simple calendar application using some of the (in the host\'s opinion) most useful features of the framework: Data binding as alternative to DOM manipulation and code reuse via services and directives. We will also introduce the core concepts of angularjs so that the attendants will leave ready to read the angularjs literature and docs without being afraid of the terminology. It is assumed that the attendants will have some javascript and HTML knowledge.'
+                    speakers: ['@_joseraya', '@manel_perez'],
+                    description : 'This is a workshop for people without prior angularjs experience'+
+                    ' in which we will develop a simple calendar application using some of the (in the host\'s opinion)'+
+                    ' most useful features of the framework: Data binding as alternative to DOM manipulation and code reuse'+
+                    ' via services and directives. We will also introduce the core concepts of angularjs so that the attendants'+
+                    ' will leave ready to read the angularjs literature and docs without being afraid of the terminology.'+
+                    ' It is assumed that the attendants will have some javascript and HTML knowledge.',
+                    level: 'Beginner'
                 },
                 {
                     start: '11:45',
                     end: '12:45',
-                    title: 'Mobile applications with Cordova + AngularJS',
-                    description : ''
+                    speakers: ['@_sgimeno', '@amatiasq'],
+                    title: 'Mobile apps with Cordova',
+                    description : 'Writing mobile apps with Apache Cordova libraries and AngularJS is a workshop for web and mobile devs who are'+
+                    'interested in hybrid and cross-platform development with web technologies. We will learn how to use'+
+                    ' the Cordova APIs into our AngularJS app without breaking the angular zen. We will code and deploy a simple game on' +
+                    ' our mobile devices (Android or iOS) focusing on the key aspects of mobile development with AngularJS.' ,
+                    level: 'Intermediate'
                 },
                 {
                     start: '13:00',
                     end: '14:00',
+                    speakers: ['@VictorBjelkholm', 'Andrés Berrios'],
                     title: 'Introduction to testing',
-                    description : 'Introduction to testing with Karma and AngularJS is an introductory course to learn the fundamentals about testing, writing testable code, writing tests for AngularJS with Jasmine and run them with Karma'
+                    description : 'Introduction to testing with Karma and AngularJS is an introductory course to learn the fundamentals about testing,'+
+                    ' writing testable code, writing tests for AngularJS with Jasmine and run them with Karma. It is assumed that the attendants will '+
+                    'have some javascript and HTML knowledge. Having some hours of flight with AngularJS is desirable but not mandatory.',
+                    level: 'Intermediate'
                 }
             ]
         }
