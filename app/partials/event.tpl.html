@@ -4,38 +4,27 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <p class="lead">
-            We have great news for this new year. The 25th january 2014 we will be holding a special event at Mobile World Center. The event will consist in a main presentation hold by a reputed speaker and several workshops covering concrete topics such as testing or mobile apps. We will make them in a hands-on format so we encourage everybody to bring his laptop and get dirty coding with us. Thanks a lot to the people of <a href="http://www.barcelonajs.org">BarcelonaJS</a> for making this possible.
-        </p>
-        <h3>Talks <small>12:00 - 14:00</small></h3>
-        <p><small>
-        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"</small></p>
+        <span class="lead" ng-repeat="p in currentEvent.description.split('\n')">
+            <p ng-bind-html="p"></p>
+        </span>
+        <div ng-show="currentEvent.talks">
+            <h3>Talks <small>12:00 - 14:00</small></h3>
+            <p><small>
+            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"</small></p>
+        </div>
     </div>
 </div>
 <div class="row" style="margin-bottom:1em">
     <div class="col-md-12">
-        <h3>Workshops <small>15:00 - 17:00</small></h3>
+        <h3 ng-show="currentEvent.workshops">Workshops <small>{{currentEvent.workshops[0].start}} - {{currentEvent.workshops[currentEvent.workshops.length - 1].end}}</small></h3>
         <p>
             The workshops will be 45-60min and they will be in a hands-on format so we encourage attendants to bring his laptop and code along with us by groups, pairs or individually. We will post the tools needed for each workshop soon.
         </p>
     </div>
-    <div class="col-md-4">
-        <h4>AngularJS 101</h4>
+    <div class="col-md-4" ng-repeat="workshop in currentEvent.workshops">
+        <h4>{{workshop.title}} <small>{{workshop.start}} - {{workshop.end}}</small></h4>
         <p><small>
-            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"</small></p>
+           {{workshop.description}}</small></p>
         </div>
-    <div class="col-md-4">
-        <h4>Mobile App with Cordova</h4>
-        <p><small>
-            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"
-        </small></p>
-    </div>
-    <div class="col-md-4">
-        <h4>Testing with Protractor</h4>
-        <p>
-            <small>
-                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?"
-            </small>
-        </p>
     </div>
 </div>
