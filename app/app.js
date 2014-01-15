@@ -55,7 +55,7 @@ angular.module('angularBCN', ['ui.bootstrap', 'ui.router','ngSanitize'])
             ' three hands-on workshops. We encourage you to bring your laptops and code with us some'+
             ' super-heroic ng-application :)\n'+
             ' All the event information can be found at <a href="http://angular.barcelonajs.org">' +
-            ' http://angular.barcelonajs.org </a>. We would like' +
+            ' angular.barcelonajs.org</a>. We would like' +
             ' to thank the <a href="http://www.barcelonajs.org/">BarcelonaJS</a> community for all its support.',
             location: 'Mobile World Centre.',
             location_link: 'http://goo.gl/maps/YTT6k',
