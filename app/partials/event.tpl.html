@@ -34,7 +34,7 @@
         </div>
         <h4 style="text-align: right"><small>{{workshop.start}} - {{workshop.end}}</small></h4>
         <h4 style="text-align: right"><small>by <span ng-repeat="s in workshop.speakers">
-            <a ng-show="s.indexOf('@') == 0" ng-href="https://twitter.com/{{s}}">{{s + (($index == workshop.speakers.length - 1) ? '.' : ', ')}}</a>
+            <a ng-show="s.indexOf('@') == 0" ng-href="https://twitter.com/{{s.split('@')[1]}}">{{s + (($index == workshop.speakers.length - 1) ? '.' : ', ')}}</a>
             <span ng-show="s.indexOf('@') != 0">{{s + (($index == workshop.speakers.length - 1) ? '.' : ', ')}}</span>
         </span></small></h4>
         <p style="text-align:justify">
