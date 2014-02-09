@@ -98,8 +98,7 @@ angular.module('angularBCN', ['ui.bootstrap', 'ui.router','ngSanitize'])
             date: new Date(2014, 1, 13, 19,0,0),
             speakers: ['@VictorBjelkholm'],
             description: 'Introduction to testing with Karma and AngularJS is an introductory course to learn the fundamentals about testing,'+
-            ' writing testable code, writing tests for AngularJS with Jasmine and run them with Karma. It is assumed that the attendants will '+
-            'have some javascript and HTML knowledge.',
+            ' writing testable code, writing tests for AngularJS with Jasmine and run them with Karma.',
         }
     ];
 
