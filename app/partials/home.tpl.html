@@ -9,16 +9,17 @@
         </p>
         <div class="jumbotron" style="padding-top:39px">
             <h1>
-                <a ng-href="#/events/{{nextEvent.date | date: 'yyyy-MM-dd'}}">
-                    Next meetup on {{nextEvent.date | date: 'MMMM d'}}{{nextEvent.date | meetupDate}}
-                </a>
-                <a href="http://www.meetup.com/AngularJS-Barcelona/events/156129312/"  class="pull-right">
-                    <img src="http://www.meetup.com/t/img/api/rbtn/k9g5e6s0et2n29b55itkppqt9c/rsvp_btn.png">
-                </a>
-            </h1>
+                <!-- <a ng-href="#/events/{{nextEvent.date | date: 'yyyy-MM-dd'}}"> -->
+                    {{nextEvent.title}}
+                    <small>on {{nextEvent.date | date: 'MMMM d'}}{{nextEvent.date | meetupDate}} at <a href="http://barcelonajs.org">BarcelonaJS</a> </small>
             
+                <!-- </a> -->
+                <!-- <a href="http://www.meetup.com/AngularJS-Barcelona/events/156129312/"  class="pull-right">
+                    <img src="http://www.meetup.com/t/img/api/rbtn/k9g5e6s0et2n29b55itkppqt9c/rsvp_btn.png">
+                </a> -->
+            </h1>
             <p>
-               From <strong>AngularBCN</strong> we want an event for newbies as well as seasoned angular developers with three hands-on workshops. We encourage you to <strong>bring your laptops</strong> and code with us some super-heroic ng-application :)
+               {{nextEvent.description}}
             </p>
         </div>
     </div>
