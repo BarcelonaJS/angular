@@ -10,74 +10,91 @@
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <style>
-
-    img.logo{
-        float: right;
-        margin-right: -2%;
-        margin-top: -3%;
-    }
-    .footer {
-        padding-top: 2em;
-        background-color: #333;
-        color: white;
-        padding-bottom: 2em;
-    }
+        img.logo{
+            float: right;
+            margin-right: -2%;
+            margin-top: -3%;
+        }
+        .footer {
+            padding-top: 2em;
+            background-color: #333;
+            color: white;
+            padding-bottom: 2em;
+        }
     </style>
 
 </head>
 <body ng-app="angularBCN">
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
-            <div class="container" ui-view>
-                
+    <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="container" ng-controller="HomeCtrl">
+        <div class="page-header">
+            <img src="app/images/logo.png" class="logo" alt="">
+            <h1>AngularJS Barcelona</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="lead">
+                    The <a href="http://www.meetup.com/AngularJS-Barcelona/">AngularJS Barcelona</a> is a community around the <a href="http://www.angularjs.org">AngularJS </a> framework. We love AngularJS, we love the way it helps us build better web applications with less effort and we would love to meet other AngularJS developers in the Barcelona area so that we can discuss our approaches, ways, etc. with them. Keep tuned in our channels on <a href="http://www.meetup.com/AngularJS-Barcelona/">Meetup</a> and <a href="https://twitter.com/AngularBCN">Twitter</a>.
+                </p>
+                <div class="jumbotron" style="padding-top:39px">
+                    <h1>{{nextEvent.title}}</h1>
+                    <h3>
+                        at <a ng-href="{{nextEvent.location.link}}">{{nextEvent.location.name}}</a>
+                        on <strong>{{nextEvent.date | date: 'MMMM d'}}{{nextEvent.date | meetupDate}}</strong>
+                        {{nextEvent.date | date: 'shortTime'}}
+                    </h3>
+                    <p>{{nextEvent.description}}</p>
+                    <h2 class="text-right">Don't miss the <a href="http://www.meetup.com/AngularJS-Barcelona/"> RSVP on meetup</a></h2>
+                </div>
             </div>
+        </div>
+        
+    </div>
 
-            <footer class="footer">
-                <div class="container">
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        
+                    </p>
+                    <p>
+                        Powered by AngularBCN  ©2013-2014
+                    </p>
+                    <p>
+                        Code licensed under the
+                        <a href="https://github.com/barcelona-js/angular/blob/gh-pages/LICENSE.md" target="_blank">The
+                          MIT License</a>.
+                      </p>
+                  </div>
+                  <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6">
-                            <p>
-                                <a href="https://twitter.com/AngularBCN" class="twitter-follow-button" data-show-count="false" data-lang="en" size="large">Follow @AngularBCN</a>
-                            </p>
-                            <p>
-                                Powered by AngularBCN  ©2013-2014
-                            </p>
-                            <p>
-                                Code licensed under the
-                                <a href="https://github.com/barcelona-js/angular/blob/gh-pages/LICENSE.md" target="_blank">The
-                                  MIT License</a>.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    Thank you:
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <img src="app/images/mwc.logo.png" alt="">
-                                </div>
-                                <div class="col-md-3 col-md-offset-1">
-                                    <img style="background-color: black; width: 80px" src="app/images/bcnjs.logo.png" alt="">
-                                </div>
-                                <div class="col-md-3">
-                                    <img style="width: 80px"src="app/images/agilogy.logo.png" alt="">
-                                </div>
-                            </div>
+                        <div class="col-md-12">
+                            Thank you:
                         </div>
                     </div>
-                  </div>
-            </footer>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="app/images/mwc.logo.png" alt="">
+                        </div>
+                        <div class="col-md-3 col-md-offset-1">
+                            <img style="background-color: black; width: 80px" src="app/images/bcnjs.logo.png" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img style="width: 80px"src="app/images/agilogy.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="vendor/angular/angular.min.js"></script>
+    
+    <script src="app/app.js"></script>
+    <script src="app/events-service.js"></script>
 
-              <script src="app/vendor/angular/angular.min.js"></script>
-              <script src="app/vendor/angular-sanitize/angular-sanitize.min.js"></script>
-              <script src="app/vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
-              <script src="app/vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-              <script src="app/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
-              <script src="app/app.js"></script>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </body>
-          </html>
+</body>
+</html>
