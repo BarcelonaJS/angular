@@ -1,7 +1,5 @@
 # AngularBarcelona Meetup
 
-
-
 ## Development Setup
 1. Install [Harp](http://harpjs.com/)  
 2. cd into root directory `angular.io/`
@@ -21,6 +19,6 @@
 
 
 ## License
-Adapted by [AngularBarcelona](meetup.com/AngularJS-Barcelona).Powered by Google ©2010-2015.
+Adapted by [AngularBarcelona](meetup.com/AngularJS-Barcelona). Powered by Google ©2010-2015.
 Code licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 Documentation licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
