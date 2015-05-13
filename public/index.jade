@@ -1,0 +1,46 @@
+#talks.grid-fluid.l-space-bottom-8
+  .c2 &nbsp;
+
+  .c8.text-center
+    h3.text-headline.text-uppercase  Warming up schedule
+    p.text-body
+      | AngularBarcelona is an open community of geeks who share
+      | an interest for the AngularJS framework. The group is made
+      | by developers and for developers. See &nbsp;
+      a(href="/contribute") CONTRIBUTING
+      |  for more details.
+
+  .c2 &nbsp;
+  .clear
+
+.grid-fluid.l-space-bottom-6
+
+  <!-- BIO CARDS -->
+  for person, name in bios
+    .c3
+      md-card(class="bio-card" data-website="#{person.website}" data-twitter="#{person.twitter}" data-pic="#{person.picture}" data-bio="#{person.bio}"  data-name="#{person.name}" data-title="#{person.talk.title}" data-description="#{person.talk.description}" ng-click="showBio($event)")
+        header
+          image(src="#{person.picture}" alt="#person.name")
+
+          nav
+            button(aria-label="View Bio") View Bio
+
+            if person.twitter
+              a(title="twitter" href="https://twitter.com/#{person.twitter}" ng-click="$event.stopPropagation()") <span class="icon-twitter"></span>
+
+            if person.website
+              a(title="website" href="#{person.website}"  ng-click="$event.stopPropagation()") <span class="icon-publ"></span>
+
+        md-card-content
+          h2.text-headline #{person.talk.title}
+          h3.text-headline.bio-card-name #{person.name}
+          p(class="bio-card-content text-body") #{person.talk.description}
+
+#about.grid-fluid.l-space-bottom-8
+.l-main-section
+  .l-sub-section
+    h3 AngularBarcelona Meetup
+
+    p Angular is a development platform for building mobile and desktop web applications.
+
+    a(href="http://meetup.com/AngularJS-Barcelona" class="button" md-button) Join the group

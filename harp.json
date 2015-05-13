@@ -1,0 +1,36 @@
+{
+  "globals": {
+    "title": "Angular",
+    "description": "Angular is a development platform for building mobile and desktop web applications",
+    "keywords": "Angular, AngularJS, AngularDart, Javscript, Dart, Framework, JavaScript MVC, Google",
+    "siteURL": "http://angular.io",
+    "jsLatest": "2.0.0-alpha.12",
+    "dartLatest": "2.0.0-alpha.6",
+
+    "bios": {
+      "raul": {
+        "name": "Raúl Jiménez",
+        "picture": "/resources/images/bios/raul-jimenez.png",
+        "twitter": "elecash",
+        "website": "http://twofuckingdevelopers.com/",
+        "talk": {
+          "title": "Angular Talk title",
+          "description": "My talk will be awesome because of yes"
+        },
+        "bio": "Miško Hevery is the creator of AngularJS framework. He has passion for making complex things simple. He currently works at Google, but has previously worked at Adobe, Sun Microsystems, Intel, and Xerox, where he became an expert in building web applications in web related technologies such as Java, JavaScript, Flex and ActionScript."
+      },
+
+      "sergi": {
+        "name": "Sergi Gimeno",
+        "picture": "/resources/images/bios/sergi-gimeno.jpg",
+        "twitter": "_sgimeno",
+        "website": "http://agilogy.com",
+        "talk": {
+          "title": "Typescript for AngularJS developers",
+          "description": "An overview on the upcoming release of AngularJS written in Typescript 1.5, a superset of ES6 language."
+        },
+        "bio": "Igor is a software engineer at Google. He is a lead on the Angular project, practitioner of test driven development, open source enthusiast, hacker. In his free time, Igor enjoys spending time with his wife and two kids, doing outdoor activities (including but not limited to sports, gardening and building retaining walls)."
+      }
+    }
+  }
+}

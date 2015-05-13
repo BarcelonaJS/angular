@@ -1,0 +1,13 @@
+{
+  "index": {
+    "hero": "home",
+    "title": "MediterraneaJS warming up by AngularBarcelona",
+    "subtitle": "20th JUNE FROM 10:00h"
+  },
+
+  "about": {
+    "title": "AngularBarcelona Meetup group",
+    "subtitle": "Help us build the community of the future!",
+    "autoformat": "true"
+  }
+}
