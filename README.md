@@ -2,10 +2,21 @@
 
 ## Development Setup
 1. Install [Harp](http://harpjs.com/)  
-2. cd into root directory `angular.io/`
+2. cd into root directory `angular/`
 3. run `harp server`
 4. Open this url in the browser: [http://localhost:9000/](http://localhost:9000/)
 
+
+## TODO
+ - Logo MediterraneaJS on home page
+ - Replace backgorund image
+ - Hero content
+  - Title: 'MediterraneaJS warming up by AngularBarcelona'
+  - Date: '20th june from 10:00h - 14:00h'
+  - Venue: 'MWC (Mobile World Center, carrer fontanella num 9)
+ - Angular Barcelona Resources: lista de redes sociales
+ - Quitar topbar 'By MediterraneaJS'
+ - [NTH] Cambiar cards con modal por descripciones abiertas
 
 ## Technology Used
 - Angular 1.x: The production ready version of Angular
