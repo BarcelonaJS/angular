@@ -47,3 +47,69 @@
 *
 */
 @import 'print';
+
+
+
+// HORACIO
+
+.no-margin { margin-bottom: 0; }
+
+.link-headline {
+	a { color: white; }
+}
+
+.mediterranea-logo
+{
+	display: inline-block;
+	width: 80%;
+	max-width: 350px;
+}
+
+.banner
+{
+	min-height: 1px;
+	padding: $unit $unit*4 $unit $unit*4;
+}
+
+.bcn-fluid
+{
+	text-align: center;
+
+	.c4
+	{
+		display: inline-block;
+		float: none;
+		text-align: left;
+	}
+
+}
+
+@media handheld and (max-width: $phone-breakpoint),
+screen and (max-device-width: $phone-breakpoint),
+screen and (max-width: $tablet-breakpoint) {
+
+	.bcn-fluid .c4 {
+		width: 90%;
+	}
+
+}
+
+.beers-section
+{
+	text-align: center;
+}
+
+.beers-logo
+{
+	width: 100%;
+	text-align: center;
+	height: auto;
+	//margin-right: $unit*2;
+
+	img
+	{
+		display: inline-block;
+		width: 100%;
+		max-width: 200px;
+	}
+}

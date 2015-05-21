@@ -1,7 +1,7 @@
 #talks.grid-fluid.l-space-bottom-8
-  .c2 &nbsp;
+  .c1 &nbsp;
 
-  .c8.text-center
+  .c10.text-center
     h3.text-headline.text-uppercase  Warming up schedule
     p.text-body
       | AngularBarcelona is an open community of geeks who share
@@ -10,14 +10,13 @@
       a(href="/contribute") CONTRIBUTING
       |  for more details.
 
-  .c2 &nbsp;
-  .clear
+  .c1 &nbsp;
 
-.grid-fluid.l-space-bottom-6
+.grid-fluid.l-space-bottom-6.bcn-fluid
 
   <!-- BIO CARDS -->
   for person, name in bios
-    .c3
+    .c4
       md-card(class="bio-card" data-website="#{person.website}" data-twitter="#{person.twitter}" data-pic="#{person.picture}" data-bio="#{person.bio}"  data-name="#{person.name}" data-title="#{person.talk.title}" data-description="#{person.talk.description}" ng-click="showBio($event)")
         header
           image(src="#{person.picture}" alt="#person.name")
@@ -32,15 +31,15 @@
               a(title="website" href="#{person.website}"  ng-click="$event.stopPropagation()") <span class="icon-publ"></span>
 
         md-card-content
-          h2.text-headline #{person.talk.title}
-          h3.text-headline.bio-card-name #{person.name}
+          h3.text-headline.bio-card-name #{person.talk.title}
           p(class="bio-card-content text-body") #{person.talk.description}
 
 #about.grid-fluid.l-space-bottom-8
 .l-main-section
-  .l-sub-section
-    h3 AngularBarcelona Meetup
-
-    p Angular is a development platform for building mobile and desktop web applications.
-
-    a(href="http://meetup.com/AngularJS-Barcelona" class="button" md-button) Join the group
+  .l-sub-section.beers-section(layout-sm="column" layout-gt-sm="row" layout-align-gt-sm="start center")
+    .beers-logo(flex="1" flex-gt-md="25")
+      img(src="resources/images/logos/bcn/beers.png")
+    .text(flex="1" flex-gt-md="75")
+      h3 AngularBarcelona Meetup
+      p Angular is a development platform for building mobile and desktop web applications.
+      a(href="http://meetup.com/AngularJS-Barcelona" class="button" md-button) Join the group

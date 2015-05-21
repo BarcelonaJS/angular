@@ -1,10 +1,11 @@
 header(class="background-sky")
-  .hero.background-sf-paper.is-large
-    h2.text-headline.text-subhead #{subtitle}
+  div(class="hero background-bcn-paper is-large" layout="column" layout-align="center center")
     h1(class="text-headline hero-logo" ng-click="toggleBcnLogo($event)" ng-class="showBcnLogo ? 'bcn-shield' : 'ng-shield'") #{title}
+    h2.text-headline.text-subhead.no-margin #{subtitle}
+    h2.text-headline.text-subhead.link-headline
+      a(href="") #{venue}
 
 
 .banner.is-centered
-  .banner-ng-annoucement
-    h3.text-display-1 MediterraneaJS
-    h4.text-subhead The Official Barcelona Javascript Conference
+  a(href="")
+    img(class="mediterranea-logo" src="resources/images/logos/bcn/mediterraneaLogo.svg")

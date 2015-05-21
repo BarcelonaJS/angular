@@ -3,8 +3,8 @@ html(lang="en" ng-app="angularIOApp" itemscope itemtype="http://schema.org/Frame
   head
     != partial("/_includes/_head-include")
 
-  body(class="l-offset-nav"  ng-controller="AppCtrl")
-    != partial("/_includes/_main-nav")
+  body(ng-controller="AppCtrl")
+
 
     <!-- HERO LOGO -->
     if hero == 'home'

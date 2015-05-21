@@ -2,7 +2,8 @@
   "index": {
     "hero": "home",
     "title": "MediterraneaJS warming up by AngularBarcelona",
-    "subtitle": "20th JUNE FROM 10:00h"
+    "subtitle": "20th JUNE FROM 10:00h",
+		"venue": "MWC (Mobile World Center, carrer fontanella num 9)"
   },
 
   "about": {

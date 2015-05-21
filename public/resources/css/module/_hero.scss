@@ -13,7 +13,8 @@ $hero-padding: $unit * 2;
   }
 
   &.is-large {
-    height: 478px;
+//    height: 478px;
+		height: 700px;
     text-align: center;
 
     @media handheld and (max-width: $phone-breakpoint),
@@ -64,7 +65,7 @@ $hero-padding: $unit * 2;
     padding-top: 224px;
     opacity: 1;
     width: $unit * 70;
-    margin: ($unit * 3) auto ($unit * 5) auto;
+    margin: 0 auto ($unit * 2) auto;
     font-weight: 400;
 
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
