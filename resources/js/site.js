@@ -171,7 +171,7 @@ angularIO.controller('AppCtrl', ['$scope', '$mdDialog', function($scope, $mdDial
         '<md-dialog class="modal" aria-label="List dialog">' +
         '  <md-content>' +
         '     <img class="left" src="' + pic + '" />' +
-        '     <h3 class="text-headline">' + title + ' by <small>' + name + '</small></h3>' +
+        '     <h3 class="text-headline">' + title + '</h3>' +
         '     <div class="modal-social">' + $twitter + $website + '</div>' +
         '     <p class="text-body">' + description + '</p>' +
         '     <h3 class="text-headline">Bio</h3>' +
