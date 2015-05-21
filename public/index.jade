@@ -1,14 +1,13 @@
-#talks.grid-fluid.l-space-bottom-8
+.grid-fluid.l-space-bottom-8
   .c1 &nbsp;
 
   .c10.text-center
-    h3.text-headline.text-uppercase  Warming up schedule
+    h3.text-headline.text-uppercase schedule
     p.text-body
-      | AngularBarcelona is an open community of geeks who share
-      | an interest for the AngularJS framework. The group is made
-      | by developers and for developers. See &nbsp;
-      a(href="/contribute") CONTRIBUTING
-      |  for more details.
+      a(href="http://angular.io") Angular 2
+      |  is already here and we all want to know about it.
+      | Let's dive into Angular 2 Developers preview and
+      | discover the future of the framework.
 
   .c1 &nbsp;
 
@@ -22,7 +21,7 @@
           image(src="#{person.picture}" alt="#person.name")
 
           nav
-            button(aria-label="View Bio") View Bio
+            button(aria-label="#person.name") #{person.name}
 
             if person.twitter
               a(title="twitter" href="https://twitter.com/#{person.twitter}" ng-click="$event.stopPropagation()") <span class="icon-twitter"></span>
@@ -31,8 +30,19 @@
               a(title="website" href="#{person.website}"  ng-click="$event.stopPropagation()") <span class="icon-publ"></span>
 
         md-card-content
-          h3.text-headline.bio-card-name #{person.talk.title}
+          h3.text-headline.bio-card-name #{person.talk.time} - #{person.talk.title}
           p(class="bio-card-content text-body") #{person.talk.description}
+
+.grid-fluid.l-space-bottom-8
+  .c1 &nbsp;
+
+  .c10.text-center
+    p.text-body
+      | We are still looking for Angular 2 talks. Plase
+      | drop us a message on <a href="http://www.meetup.com/AngularJS-Barcelona">Meetup</a> if you are interested.
+
+  .c1 &nbsp;
+
 
 #about.grid-fluid.l-space-bottom-8
 .l-main-section
@@ -40,6 +50,6 @@
     .beers-logo(flex="1" flex-gt-md="25")
       img(src="resources/images/logos/bcn/beers.png")
     .text(flex="1" flex-gt-md="75")
-      h3 AngularBarcelona Meetup
-      p Angular is a development platform for building mobile and desktop web applications.
-      a(href="http://meetup.com/AngularJS-Barcelona" class="button" md-button) Join the group
+      h3 AngularBeers after-event
+      p AngularBeers invites you to talk and share about AngularJS while having some beers after the talks are finished.
+      a(href="http://meetup.com/AngularJS-Beers/" class="button" md-button) Join the group
