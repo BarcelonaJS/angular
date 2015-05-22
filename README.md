@@ -8,14 +8,8 @@
 
 
 ## TODO
- - Logo MediterraneaJS on home page
- - Replace backgorund image
- - Hero content
-  - Title: 'MediterraneaJS warming up by AngularBarcelona'
-  - Date: '20th june from 10:00h - 14:00h'
-  - Venue: 'MWC (Mobile World Center, carrer fontanella num 9)
- - Angular Barcelona Resources: lista de redes sociales
- - Quitar topbar 'By MediterraneaJS'
+ - Link to RSVP
+ - Adapt speakers picture on open modals in mobile devices
  - [NTH] Cambiar cards con modal por descripciones abiertas
 
 ## Technology Used
