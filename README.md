@@ -1,27 +1,7 @@
 # AngularBarcelona Meetup
 
-## Development Setup
-1. Install [Harp](http://harpjs.com/)  
-2. cd into root directory `angular/`
-3. run `harp server`
-4. Open this url in the browser: [http://localhost:9000/](http://localhost:9000/)
-
-
-## TODO
- - Link to RSVP
- - Adapt speakers picture on open modals in mobile devices
- - [NTH] Cambiar cards con modal por descripciones abiertas
-
-## Technology Used
-- Angular 1.x: The production ready version of Angular
-- Angular Material: An implementation of Material Design in Angular.js
-- Harp: The static web server with built-in preprocessing.
-- Sass: A professional grade CSS extension language
-- Normalize: A modern, HTML5-ready alternative to CSS resets
-- Grids: A highly customizable CSS Grid Framework built with Sass
-- Prettify: A JS module and CSS for syntax highlighting of source code snippets.
-- Icomoon: Custom built icon fonts
-
+[Submit a Talk](
+https://github.com/BarcelonaJS/angular/issues/new?title=Your%20Awesome%20Talk&body=---%0Alevel:%20beginner%20%7C%20advanced%20%7C%20expert%0Alanguage:%20en%20%7C%20es%0Atwitter:%20YourTwitterHandle%0Atags:%0A%20%20-%20hello%0A%20%20-%20node%0A---%0A%0AYour%20awesome%20talk%20description)
 
 ## License
 Adapted by [AngularBarcelona](meetup.com/AngularJS-Barcelona). Powered by Google ©2010-2015.
